@@ -1,0 +1,53 @@
+2017-05-23
+#content .visual_btn_pre{
+    position:absolute; top:40%;
+    display: inline-block;
+    width:100%;
+    z-index:1; /*추가*/
+}
+
+.Lnb_list {padding-bottom:10px;  width:100%;}
+.Lnb_list ul {
+    line-height:50px;
+
+    /*주석처리*/
+    /*padding-left:10%;*/ 	
+    /*text-overflow:clip;*/
+    /*overflow:hidden;*/
+}
+.Lnb_list ul a{     
+    float:left; 
+    font-size:1.0em; 
+    /*주석처리*/ 
+    /*margin-right:20px;*/ 
+    color:#fff; 
+    position:relative;
+}
+
+2017.05.24
+.area_proView{
+    border-radius:15px;
+    -webkit-border-radius:15px; 
+    -o-border-radius:15px; -ms-border-radius:15px; -moz-border-radius:15px;
+    background:#fff;
+    width:90%;
+    margin-left:5%;
+    text-align:center;
+    box-shadow:0px -2px 5px 2px rgba(0,0,0,0.3);
+    overflow-y:scroll;/*수정*/
+          -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-user-select:none;
+           -webkit-touch-callout:none;
+           overflow-y: 160px !important;
+    -webkit-user-select:none;
+}
+ /*추가*/
+.areaImgList_con ul{
+    height:100%;
+}
+
+
+
+
+

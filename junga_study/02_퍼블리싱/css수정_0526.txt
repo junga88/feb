@@ -1,0 +1,7 @@
+.lnb_cir_listMenu ul li{
+    /*width: 100%;*/ /*주석 처리*/
+    margin-right:0.188em;
+    float:left;
+} 
+
+.content_tab ul a > li{width:33.33%;} /*수정*/

@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>    
+<title>참좋은여행</title>
+
+</head>
+    
+<body>
+    <section id="wrap">
+        <!--상단-->
+        <header id="header" class="page_header">
+            <div class="header_Gnb_black">
+                <a href="" class="GnbHead_Sidemenu fl"><span class="ic_Gnb ic_side_black_pre">사이드메BtnHead_Sidemenu뉴</span></a>
+                <h2 class="fl">검색</h2>
+            </div>
+        </header>
+        <!--//상단-->
+        <div class="clear"></div>
+        <!--content-->
+        <section id="contentWrap">
+            <section id="content">
+                
+                <form>
+                    <fieldset>
+                        <legend>검색결과</legend>
+                        <div class="search_result_input">
+                            <input placeholder="검색할 단어를 입력해주세요">
+                            <span class="ic_Gnb ic_side_searchMenu"></span>
+                        </div>
+                        
+                        
+                        <div class="master_detail_choice"><a href="" class="color_008efd">상세조건 선택<p class="circle"><span class="ic ic_side_MasterCheck"></span></p></a></div>
+                    <div class="master_line"></div>
+                        
+                        <!--상세조건-->
+                   
+                        
+                            <div class="detail_qualification">
+                                <div>
+                                    <h4>동반자유형</h4>
+                                    <div class="checkbox_choice fr pt15_0938">
+                                        <input type="checkbox" id="c1" name="" />
+                                        <label for="c1"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                    </div>
+                                    <div class="clear pt4">
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c2" name="" />
+                                            <label for="c2"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>가족</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c3" name="" checked/>
+                                            <label for="c3"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>친구</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c4" name="" />
+                                            <label for="c4"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>커플</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c5" name=""/>
+                                            <label for="c5"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>혼자</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c6" name="" />
+                                            <label for="c6"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>모임</label>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="clear"></div>
+                                <div class="detail_line">
+                                    <h4>여행기간</h4>
+                                    <div class="checkbox_choice fr pt15_0938">
+                                        <input type="checkbox" id="c7" name="" />
+                                        <label for="c7"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                    </div>
+                                    <div class="clear pt4">
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c8" name="" />
+                                            <label for="c8"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>3일</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c9" name="" checked/>
+                                            <label for="c9"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>3일~5일</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c10" name="" />
+                                            <label for="c10"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>5일~7일</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c11" name="" />
+                                            <label for="c11"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>9일~11일</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c12" name="" />
+                                            <label for="c12"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>12일이상</label>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="clear"></div>
+                                <div class="detail_line">
+                                    <h4>스타일</h4>
+                                    <div class="checkbox_choice fr pt15_0938">
+                                        <input type="checkbox" id="c13" name="" />
+                                        <label for="c13"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                    </div>
+                                    <div class="clear pt13_0813">
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c14" name="" />
+                                            <label for="c14"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>해외여행</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c15" name="" checked/>
+                                            <label for="c15"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>프리미엄</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c16" name="" />
+                                            <label for="c16"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>자유여행</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c17" name=""/>
+                                            <label for="c17"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>허니문</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c18" name=""/>
+                                            <label for="c18"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>골프</label>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="clear"></div>
+                                <div class="detail_line">
+                                    <h4>예약상태</h4>
+                                    <div class="checkbox_choice fr pt15_0938">
+                                        <input type="checkbox" id="c19" name="" />
+                                        <label for="c19"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                    </div>
+                                    <div class="clear pt4">
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c20" name="" />
+                                            <label for="c20"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>예약가능</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c21" name="" checked/>
+                                            <label for="c21"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>대기예약</label>
+                                        </div>
+                                        <div class="checkbox_choice width_50">
+                                            <input type="checkbox" id="c22" name="" />
+                                            <label for="c22"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>출발확정</label>
+                                        </div>
+                                        <div class="checkbox_choice">
+                                            <input type="checkbox" id="c23" name="" />
+                                            <label for="c23"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>예약마감</label>
+                                        </div>
+                                        <div class="checkbox_choice clear ">
+                                            <input type="checkbox" id="c24" name="" />
+                                            <label for="c24"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>남은좌석</label>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="clear"></div>
+                                <!--출발요일-->
+                                <div class="detail_line">
+                                    <h4>출발요일</h4>
+                                    <div class="checkbox_choice fr pt15_0938">
+                                        <input type="checkbox" id="c25" name="" />
+                                        <label for="c25"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                    </div>
+                                    <ul class="detail_week pbzero">
+                                        <li>
+                                            <input type="checkbox" id="c26" name="" />
+                                            <label for="c26"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn"><span class="week_txt">월</span></span></label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="c27" name="" />
+                                            <label for="c27"><div class="checkView02"><span class=""></span></div><span class="chk_btn"><span class="week_txt_press">화</span></span></label>
+                                            <!--press할때 .ic ic_master_check을 삭제하고 .week_txt 대신에 .week_txt_press을 넣어주세요-->
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="c28" name="" />
+                                            <label for="c28"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn"><span class="week_txt">수</span></span></label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="c29" name="" />
+                                            <label for="c29"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn"><span class="week_txt">목</span></span></label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="c30" name="" />
+                                            <label for="c30"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn"><span class="week_txt">금</span></span></label>
+                                        </li>
+                                        <li class="ptsat">
+                                            <input type="checkbox" id="c31" name="" />
+                                            <label for="c31"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn_sat"><span class="week_txt">토</span></span></label>
+                                        </li>
+                                        <li class="ptsun">
+                                            <input type="checkbox" id="c32" name="" />
+                                            <label for="c32"><div class="checkView02"><span class="ic ic_master_check"></span></div><span class="chk_btn_sun"><span class="week_txt">일</span></span></label>
+                                        </li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                    <div class="detail_line pb21 inine-block proList_detail_pay">
+                                        <h4>상품가격</h4>
+                                        <div class="checkbox_choice fr pt15_0938">
+                                            <input type="checkbox" id="c33" name="" />
+                                            <label for="c33"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>전체</label>
+                                        </div>
+                                        <div class="clear pt4">
+                                            <div class="checkbox_choice width_50">
+                                                <input type="checkbox" id="c34" name="" />
+                                                <label for="c34"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>50만원 이하</label>
+                                            </div>
+                                            <div class="checkbox_choice">
+                                                <input type="checkbox" id="c35" name="" checked/>
+                                                <label for="c35"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>50~100만원</label>
+                                            </div>
+                                            <div class="checkbox_choice width_50">
+                                                <input type="checkbox" id="c36" name="" />
+                                                <label for="c36"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>100~150만원</label>
+                                            </div>
+                                            <div class="checkbox_choice">
+                                                <input type="checkbox" id="c37" name="" />
+                                                <label for="c37"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>150~200만원</label>
+                                            </div>
+                                            <div class="checkbox_choice clear">
+                                                <input type="checkbox" id="c38" name="" />
+                                                <label for="c38"><div class="checkView"><span class="ic ic_master_check"></span></div><span class="chk_btn"></span>200만원 이상</label>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    <div class="btn_detailCon">
+                                        <div class="btnSaveCon">
+                                            <a href=""><p class="btn_cancel">초기화</p></a>
+                                            <a href=""><p class="btn_save">결과보기</p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                
+                    <!--상세조건-->
+                        
+                        <div class="mask"></div>
+                        
+                    
+                        
+                        <ul class="search_result_conList">
+                            <li class="title">홍콩</li>
+                            <li class="contxt">총 67건의 검색결과가 있습니다.</li>
+                        </ul>
+
+                    </fieldset>
+                </form>    
+                <div class="proList_thumbnail">
+                    <div class="relative"> 
+                    <div class="thumbail_tab">
+                        <div class="border_right_none">추천 상품순</div>
+                        <div class="border_right_none active">낮은 가격순</div>
+                        <div class="border_right_none">높은 가격순</div>
+                        <div class="border_right_none">예약 많은순</div>
+                        <div class="border_right_none">평점 높은순</div>
+                        <div class="border_right_none">이벤트 진행순</div>
+                        <div class="border_right_none">가족여행 선호순</div>
+                        <div class="border_right_none">모임 여행 선호순</div>
+                        <div class="border_right_none">커플여행 선호순</div>
+                        <div class="border_right_none">친구여행 선호순</div>
+                        <div class="border_right_none">나혼자여행 선호순</div>
+                    </div>
+                    <div class="icon_menu"><span class="ic ic_thumbnail_menu03"></span></div>
+                    </div>
+                    
+                    <div class="thumbnail_listView">
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList01.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                            
+                        </div>
+                        <div class="content_space_line6"></div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList02.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                            
+                        </div>
+                        <div class="content_space_line6"></div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList03.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                            
+                        </div>
+                        <div class="content_space_line6"></div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList04.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                        </div>
+                        <div class="content_space_line6"></div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList05.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                            
+                        </div>
+                        <div class="content_space_line6"></div>
+                        <div class="thumbnail_box">
+                            <div class="thumbnail_box_img">
+                                <img src="../images/img_proList06.png">
+                                <ul class="latest_product_icon">
+                                    <li class="latest_title">최근 본 상품</li>
+                                    <li class="latest_txt">
+                                        <div class="relative">이벤트가 진행중인 출발 상품이 있습니다.<span class="bu"></span></div>
+                                    </li>
+                                    <li class="latest_icon"><span class="ic ic_side_present_white"></span></li>
+                                </ul>
+                            </div>    
+                            <div class="thumbnail_txtInfoCon">
+                                <p class="premium"><span class="relative zindex99999">프리미엄</span><span class="tape"></span></p>
+                                <p class="info_txt">[태국으로 일찍가면은] 오전출발 방콕/파타
+야+산호섬+안마1시간+코끼리트래킹 5일</p>
+                                <p><span></span></p>
+                                <p class="date">5박 6일, 6박 7일, 7박 8일, 8박 9일, 9박 10일, 10박 11일</p>
+                                <p class="payment">3,846,000원 ~</p>
+                            </div>
+                            
+                        </div>
+                        <div class="content_space_line6"></div>
+                    </div>
+                 
+                </div>
+            </section>
+        </section>    
+        <!--//content-->
+        <div class="clear"></div>
+        <!--푸터-->
+        <footer> 
+            <ul class="footer_list">
+                <li><a href="#">로그인</a><span>I</span></li>
+                <li><a href="#">고객센터</a><span>I</span></li>
+                <li><a href="#">전화상담</a><span>I</span></li>
+                <li><a href="#">1:1문의</a><span>I</span></li>
+                <li><a href="#">PC버전</a></li>
+            </ul>
+            <div class="fontExpandRedCon">
+                <div class="fontExpandRedBox" id="btnSize">
+                    <p class="txtUp clsButton" id="fontSmall">가<span class="ic ic_footerTxtUp"></span></p>
+                    <p class="txtDown clsButton" id="fontBig">가<span class="ic ic_footerTxtDown"></span></p>
+                </div>
+                <div class="settingIcon"><span class="ic_Gnb ic_side_setting"></span><span class="setTxt">설정</span></div>
+            </div>
+            <div class="clear"></div>
+            <div class="footerAddress">
+                <div class="address_con">
+                <ul class="Finfo">
+                    <li><span class="companyName">참좋은레져(주)</span> ㅣ 대표자 : 이상호 [사업자정보확인]</li>
+                    <li>사업자등록번호 : 104-85-20381 </li>
+                    <li>통신판매업신고 : 제2012 - 서울중구 0165</li>
+                    <li>개인정보 관리 책임자 : 오윤 wunos@verygoodtour.com</li>
+                    <li>주소 : 서울시 중구 서소문동 21-1 연호빌딩 10~12층 참좋은여행</li>
+                    <li>대표전화 : <a href="tel:1588-7557">1588-7557</a> / FAX : 02-599-3111 <br><span class="email_refusal">이메일무단수집거부</span></li>
+                </ul>
+                <div class="btn_appstore">
+                    <div class="apps_con">
+                    <a hre="#"><img src="../images/btn_footerAppS.png" class="fl mr10"></a>
+                    <a hre="#"><img src="../images/btn_footerGooP.png"></a>
+                    </div>    
+                </div>
+                <ul class="Fclause_con">
+                    <li>회사소개<span>I</span></li>
+                    <li>기업전문여행<span>I</span></li>
+                    <li>이용약관<span>I</span></li>
+                    <li>개인정보처리방침</li>
+                </ul> 
+                <p class="copy">ⓒ VERYGOOD LEISURE CO.,LTD.</p>
+                <ul class="footer_cubeBtn_hidden">
+                    <li><a hre="#"><img src="../images/btn_cuve.png"></a></li>
+                    <!--li><a id="" hre="#"><img src="../images/btn_history.png"></a></li-->
+                    <li><a id="" hre="#"><img src="../images/btn_top.png"></a></li>
+                </ul>    
+                </div> 
+            </div>
+        </footer>
+        <!--//푸터-->      
+    </section>
+</body>
+</html>

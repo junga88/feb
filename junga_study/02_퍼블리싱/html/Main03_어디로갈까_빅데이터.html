@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.4.1.js" type="text/javascript"></script>
+
+<title>참좋은여행</title>
+</head>
+
+    
+    
+<script>
+ $(document).ready( function() {
+   $('#btnSize .clsButton').click( function(){
+     //본문 영역을 변수에 담기
+     var $contents = $('#contents'); //alert($contents);
+     //본문 영역의 폰트 사이즈 가져오기
+     var fontSize = $contents.css('fontSize'); //alert(fontSize);
+     //폰트사이즈의 숫자만 가져오기
+     var num = parseFloat(fontSize, 10); //alert(num);
+     //단위만 가져오기
+     var unit = fontSize.slice(-2); //alert(unit); // px 오른쪽에서 2자 가져옴
+     // 크게/작게
+     //alert(this.id);
+     if(this.id == "fontBig") {
+      num *= 1.03;
+     }
+     else if(this.id == "fontSmall") {
+      num /= 1.03;
+     }
+     // 폰트 크기 재설정
+     $contents.css('fontSize', num + unit);
+   });
+ });
+</script>
+
+
+    
+<body>   
+    <section id="wrap">
+        <!--상단-->
+        <header id="header" class="page_header">
+            <div class="top_color_test ">
+            <div class="head_gnb">
+                <a href="" class="btn_head_sidemenu fl"><span class="ic_GnbMain ic_side_menu">사이드메뉴</span></a>
+                <h2 class="fl"><img src="../images/logo.png"></h2>
+                <a href="" class="btn_head_sidemenu_close02"><span class="ic_GnbMain ic_side_search">사이드메뉴</span></a>
+                <a href="" class="btn_head_sidemenu_close"><span class="ic_GnbMain ic_side_menu02">사이드메뉴</span></a>
+            </div>
+            <div class="Lnb_list">
+                <ul>
+                    <a href="#"><li>홈</li></a>
+                    <a href="#"><li>해외여행</li></a>
+                    <a href="#"><li>자유여행</li></a>
+                    <a href="#"><li>수퍼클래스</li></a>
+                    <a href="#" class="dis_none"><li>부산여행</li></a>
+                </ul>    
+            </div>
+            </div>  
+        </header>
+        <!--//상단-->
+        <div class="clear"></div>
+        <!--content-->
+        <div id="contents">
+        <section id="content contents">
+            <div class="content_tab">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab01_off">사이드메뉴</span><span>기획전</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab02_off">사이드메뉴</span><span>맞춤검색</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab03_on">사이드메뉴</span><span class="tabActive">어디갈까?</span>
+                            <div class="lnb_cir_listMenu">
+                                <ul>
+                                    <li class="cir_disable"></li>
+                                    <li class="cir_disable"></li>   
+                                    <li class="cirOver_active"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <!--지역별 어디로갈까-->
+            <div class="where_BigDataContent">
+                <div class="titleTxt">
+                    <p>같은 상품을 조회한 고객이 가장 많이 찾는 상품</p>
+                    <p>더보기<span></span></p>
+                    <div class="titlebgImg"></div>
+                </div>
+                <div class="where_BigData_List">
+                <div class="familyList_con">
+                    <div class="TConList01">
+                        <div class="Tphoto">
+                            <img src="../images/img_familyList01.png">
+                            <div class="eventProduct_txt">
+                                <p class="numberImg01"></p>
+                                <p class="iconWid">
+                                    <a href="#"><img src="../images/icon_areaEvent.png" class="mr10"></a>
+                                    <a href="#"><img src="../images/icon_areaVr.png" ></a>
+                                </p>
+                            </div>
+                        </div>    
+                        <div class="clear"></div>
+                        <div class="titleInfo_txt">
+                            <h4>
+                                 <span class="areaSuper">SUPERCLASS</span>[2017년 그랜드오픈 특급 힐튼 코타키
+나발루] 아일랜드호핑투어+자유일정+식사권지급, 아일랜드호핑투어+자유일정+식사권지급, 아일랜드호핑투어+자유일정+식사권지급,아일랜드호핑투어+자유일정+식사권지급
+                            </h4>
+                            <div class="price_txt">
+                                <p class="fl">7박9일부터</p>
+                                <p class="fr">1,260,000원 ~ </p>
+                            </div>
+                            <div class="clear"></div>
+                            <p class="weekTxt"><span class="ic ic_side_statistics"></span>지난 1주일 기준, 29건이 예약된 상품입니다.</p>
+                        </div>
+                    </div>
+                    <div class="TConList02">
+                        <div class="Tphoto">
+                            <img src="../images/img_familyList01.png">
+                            <div class="eventProduct_txt">
+                                <p class="numberImg02"></p>
+                                <p class="iconWid02"><a href="#"><img src="../images/icon_areaVr.png" class=""></a></p>
+                            </div> 
+                        </div>
+                        <div class="titleInfo_txt">
+                            <h4 class="titleInfoTxt_padding">
+                                <span class="areaSuper">SUPERCLASS</span>[2017년 그랜드오픈 특급 힐튼 코타키나발루] 아일랜드호핑투어 + 자유일정 + 식사권지급
+                            </h4>
+                            <div class="price_txt titleInfoTxt_padding">
+                                <p class="fl">5박 6일부터</p>
+                                <p class="fr">3,849,000원 ~ </p>
+                            </div>
+                            <div class="clear"></div>
+                            <p class="presentTxt"><span class="ic ic_side_present_white"></span><span>위 상품은 이벤트가 진행중인 출발상품이 있습니다.</span></p>
+                        </div>
+                    </div>
+                    <a href="">
+                        <div class="btnAddPlusCon">
+                           <span class="ic ic_side_addplus"></span><span class="btnAddPlus">더보기</span>
+                        </div>
+                    </a>
+                    <div class="clear"></div>
+                </div>
+                </div>
+            </div>
+            <!--//지역별 어디로갈까-->
+        </section>
+        <!--//content-->
+            </div>
+        <div class="clear"></div>
+     
+        <!--푸터-->
+        <footer> 
+            <ul class="footer_list">
+                <li><a href="#">로그인</a><span>I</span></li>
+                <li><a href="#">고객센터</a><span>I</span></li>
+                <li><a href="#">전화상담</a><span>I</span></li>
+                <li><a href="#">1:1문의</a><span>I</span></li>
+                <li><a href="#">PC버전</a></li>
+            </ul>
+            <div class="fontExpandRedCon">
+                <div class="fontExpandRedBox" id="btnSize">
+                    <p class="txtUp clsButton" id="fontSmall">가<span class="ic ic_footerTxtUp"></span></p>
+                    <p class="txtDown clsButton" id="fontBig">가<span class="ic ic_footerTxtDown"></span></p>
+                </div>
+            </div>    
+            <div class="footerAddress">
+                <div class="address_con">
+                <ul class="Finfo">
+                    <li><span class="companyName">참좋은레져(주)</span> ㅣ 대표자 : 이상호 [사업자정보확인]</li>
+                    <li>사업자등록번호 : 104-85-20381 </li>
+                    <li>통신판매업신고 : 제2012 - 서울중구 0165</li>
+                    <li>개인정보 관리 책임자 : 오윤 wunos@verygoodtour.com</li>
+                    <li>주소 : 서울시 중구 서소문동 21-1 연호빌딩 10~12층 참좋은여행</li>
+                    <li>대표전화 : <a href="tel:1588-7557">1588-7557</a> / FAX : 02-599-3111 <br><span class="email_refusal">이메일무단수집거부</span></li>
+                </ul>
+                <div class="btn_appstore">
+                    <div class="apps_con">
+                    <a hre="#"><img src="../images/btn_footerAppS.png" class="fl mr10"></a>
+                    <a hre="#"><img src="../images/btn_footerGooP.png"></a>
+                    </div>    
+                </div>
+                <ul class="Fclause_con">
+                    <li>기업고객맞춤서비스<span>I</span></li>
+                    <li>이용약관<span>I</span></li>
+                    <li>개인정보취급(처리)방침</li>
+                </ul> 
+                <p class="copy">COPYRIGHT ⓒ verygoodleisure Co., Ltd.<br> ALL RIGHT RESERVED</p>
+                </div>    
+            </div>
+        </footer>
+        <!--//푸터-->        
+        
+        <div class="clear"></div>
+        <div class="popLayerCon">
+            <ul class="cubeBtn">
+                <li><a hre="#"><img src="../images/btn_cuve.png"></a></li>
+                <li><a id="" hre="#"><img src="../images/btn_history.png"></a></li>
+                <li><a id="" hre="#"><img src="../images/btn_top.png"></a></li>
+            </ul>    
+            <div class="clear"></div>
+            <!--지역별상품보기-->
+            
+            <div class="area_proView">
+                <div class="area_title_txt">
+                    <p class="inine-block fl">지역별상품보기</p><span class="prebtn"></span>
+                </div>
+                <div class="clear"></div>
+                <div class="areaImgList_con">
+                    <ul>
+                        <li><img src="../images/MareaImg01.png"><span>#동남아</span></li>
+                        <li><img src="../images/MareaImg02.png" ><span>#유럽/인도</span></li>
+                        <li><img src="../images/MareaImg03.png" ><span>#홍콩/대만</span></li>
+                        <li><img src="../images/MareaImg04.png" ><span>#일본</span></li>
+                        <li><img src="../images/MareaImg05.png" ><span>#중국</span></li>
+                        <li><img src="../images/MareaImg06.png" ><span>#미주</span></li>
+                        <li><img src="../images/MareaImg07.png" ><span>#대양주</span></li>
+                        <li><img src="../images/MareaImg08.png" ><span>#괌/사이판</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//지역별 상품보기-->
+        </div>
+    </section>
+</body>
+</html>

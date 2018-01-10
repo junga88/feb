@@ -1,0 +1,1801 @@
+@charset "utf-8";
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" );
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+	font-family:'Noto Sans KR',
+    'Nanum Gothic','Malgun Gothic','맑은 고딕','굴림',gulim,'돋움',dotum,'Microsoft NeoGothic', 'Droid sans', sans-serif; /* 1 */
+  	-ms-text-size-adjust: 100%; 
+	-webkit-text-size-adjust: 100%; 
+}
+body {
+	margin: 0;
+	padding: 0;
+    -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+    overflow-y: visible !important;
+}
+*{margin:0; padding:0;}
+/*html { font-size: 62.5%; } 
+body { font-size: 1em;} 
+
+@media (max-width: 300px) { 
+    html { font-size: 70%; } 
+} 
+
+@media (min-width: 500px) { 
+    html { font-size: 80%; } 
+} 
+
+@media (min-width: 700px) { 
+    html { font-size: 120%; } 
+} 
+
+@media (min-width: 1200px) { 
+    html { font-size: 200%; } 
+}
+/* HTML5 display definitions*/
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+fieldset {border:0;padding:0;margin:0;}
+fieldset:after {content: " "; display: table; height: 0; clear: both; }
+fieldset legend {display:none;}
+ 
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+h2 {
+  font-size: 2em;
+  margin: 0em 0;
+}
+
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+  outline-style:none;
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+  outline-style:none;
+}
+form, {outline-style:none;}
+
+/*input박스 그림자 효과 없애기*/
+form input[type="text"]{
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+/*
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+*/
+	padding: :0;
+	margin: 0;
+	border: 0;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  resize:none;
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+ul,li,ol { list-style: none; margin: 0; padding: 0;}
+
+th,td,input,select,textarea,button {
+	font-size:14px;line-height:1;color:#333
+}
+ 
+*,*:before,*:after { box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+
+img {max-width:100%;}
+
+::-webkit-input-placeholder {
+    color:    #666; 
+}
+:-moz-placeholder {
+    color:    #666;
+}
+::-moz-placeholder {
+    color:    #666;
+}
+:-ms-input-placeholder {
+    color:    #666;
+}
+:-o-input-placeholder {
+    color:    #666;
+}
+input[type=text]::-webkit-input-placeholder{color:#c5c5c5;}
+input[type=text]::-moz-input-placeholder{color:#c5c5c5;}
+input[type=password]::-webkit-input-placeholder{color:#c5c5c5;}
+input[type=password]::-moz-input-placeholder{color:#c5c5c5;}
+input[type=email]::-webkit-input-placeholder{color:#c5c5c5;}
+input[type=email]::-moz-input-placeholder{color:#c5c5c5;}
+input[type=number]::-webkit-input-placeholder{color:#c5c5c5;}
+input[type=number]::-moz-input-placeholder{color:#c5c5c5;}
+a,
+a:hover,
+a:active,
+a:visited { text-decoration: none;}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+}
+i, time { font-style: normal; }
+caption{display: none;}
+a{cursor: pointer;}
+
+.width_100{width:100%;}
+.fl{float:left;}
+.fr{float:right;}
+
+.clear{clear:both;}
+.dis_none{display:none;}
+.inine-block{display:inline-block;}
+.inine-webkbox{display:-webkit-box;}
+
+.mt-075{ margin-top:-0.750em!important;}
+.mt0{margin-top:0px!important;}
+.mt4{ margin-top:4px!important;}
+.mt12{margin-top:12px!important;}
+.mr10{margin-right:10px!important;}
+.mr5{margin-right:5px;}
+.mr_none{margin-right:0!important;}
+
+.pt2{ padding-top:2px;}
+.pt10{ padding-top:10px;}
+
+
+.border_none{border:none!important;}
+.border_right_none{border-right:none!important;}
+.margin_none{margin-left:0!important;}
+.margin_rnone{margin-right:0!important;}
+.marginBottom_none{margin-bottom:0!important;}
+.text_align{text-align:center;}
+
+/*====================================================*/
+
+
+#wrap {min-height:100%; position:relative; overflow-x:hidden;}
+#header{
+    width:100%; left:0; right:0;top:0; z-index: 1030; position:relative;/*position: fixed; */
+    font-size:30px; font-size:1.0em;
+}
+/*#header h2{
+    font-size:1.4em; text-align:center; color:#fff;
+    vertical-align:middle; line-height:65px;
+    width:50%; 
+}*/
+
+
+#header h2 img{max-width:4.0em;}
+
+/*~ iphone5*/
+@media only screen and (min-width :320px) {
+
+    #header h2 img{max-width:3.5em;}
+    
+    /*서브SideMenu*/
+    .#header .header_Gnb h2{
+    width:100%; margin:0px auto 0; text-align:center; line-height:65px; color:#fff;
+    background:#008efd; font-size:1.3em!important;
+}
+}
+.ic {
+	display:inline-block;
+	vertical-align:middle;
+	text-indent: -9999px; 
+    background:url(../images/ic_common.png) no-repeat;
+	background-size:300px 300px;
+}
+.ic_Gnb{
+	display:inline-block;
+	vertical-align:middle;
+	text-indent: -9999px; 
+    background:url(../images/ic_Gnb.png) no-repeat;
+	background-size:300px 300px;
+}
+.ic_GnbMain{
+	display:inline-block;
+	vertical-align:middle;
+	text-indent: -9999px; 
+    background:url(../images/ic_GnbMain.png) no-repeat;
+	background-size:300px 300px;
+}
+
+.page_header{ 
+	background: rgb(255,255,255); /* Old browsers */
+}
+.head_gnb {
+    height:75px; margin:0 auto;
+}
+#header .header_Gnb h2{
+    width:100%; margin:0px auto 0; text-align:center; line-height:2.313em; color:#fff;
+    background:#008efd; font-size:21px; height:2.313em;
+}
+
+.top_color_test{
+    background: -moz-linear-gradient(left top, #008ffe 0%, #0070c7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#008ffe), color-stop(100%,#0070c7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* IE10+ */
+	background: linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* W3C */
+    height:140px;
+}
+/*메인SideMenu*/
+.btn_head_sidemenu {
+        position:absolute;left:10px; top:20x;
+		padding:25px 4px 5px 3px;
+		line-height:0;
+}
+/*서브SideMenu*/
+.BtnHead_Sidemenu {
+        position:absolute;left:10px; top:0;
+		padding:0px 4px 5px 3px;
+		line-height:65px;
+}
+	
+.btn_head_sidemenu_close {
+		position:absolute;right:10px;top:20px;
+		padding:4px 2px 5px 5px;
+		line-height:0;
+}
+
+.btn_head_sidemenu_close02 {
+		position:absolute;right:50px;top:20px;
+		padding:4px 2px 5px 5px;
+		line-height:0;
+}
+.ic_Gnb.ic_side_menu01 {
+    background-position:0px 0px; width:37px; height:37px;
+    vertical-align: -webkit-baseline-middle;
+}
+.GnbHead_Sidemenu { 
+        position:absolute;left:0.500em; top:0;
+		line-height:2.313em; 
+}
+	
+
+.ic.ic_side_menu {background-position:-50px -0px;width: 25px;	height:23px;}
+.ic.ic_side_menu02 {background-position:-165px 0px; width:27px; height:25px;}
+.ic.ic_side_close {background-position:0px 0px; width:25px; height:25px;}
+.ic.ic_side_search {background-position:-120px 0px; width:27px; height:27px;}
+.ic.ic_side_check{
+    background-position:0px 0px; width:18px; height:18px; 
+}
+.ic.ic_side_statistics{
+    background-position:-144px 0px; width:18px; height:18px;
+}
+.ic.ic_side_present{background-position:-255px 0px; width:27px; height:27px; float:left;}
+
+.ic.ic_side_present_white{
+    background-position:-108px 0px; width:18px; height:18px; 
+    vertical-align:sub;
+}
+.ic.ic_side_keywordSearch{
+     background-position:-18px 0px; width:18px; height:18px; 
+}
+.ic.ic_side_areaNext{
+    background-position:-162px 0px; width:18px; height:18px;
+    vertical-align: sub;
+    position:inherit; top:3px; float: right;
+}
+.ic.ic_side_areaTraReview{
+    background-position:-36px 0px; width:18px; height:18px; 
+}
+.ic.ic_side_shortcut{
+    background-position:-54px 0px; width:18px; height:18px; 
+}
+.ic.ic_side_areaNext02{
+    background-position:-72px 0px; width:18px; height:18px;
+    vertical-align:top;
+}
+.ic.ic_side_addplus{
+     background-position:-90px 0px; width:18px; height:18px;
+    vertical-align:sub; 
+}
+.ic.ic_side_areaNext_blue{
+     background-position:-180px 0px; width:18px; height:18px;
+     vertical-align: sub; float:right;
+    position:inherit; top:3px;
+}
+
+.ic.ic_side_menu_pre {background-position:-40px -38px; width:25px; height:24px;}
+.ic.ic_side_menu_arrow_bottom {background-position:-25px -50px; width:20px; height:20px; position:absolute; top:19px; right:35px; z-index:9999;}
+.ic.ic_side_note_icon {background-position:-120px -180px; width:31px; height:35px;}
+
+ic_side_menu_inputsearch {width:27px; height:27px; background:url(../../images/mbl/icon_shop_search.png) no-repeat; vertical-align:top;
+display:inline-block; z-index:999; border:1px solid #000;}
+
+
+/*============================================================================*/
+
+.body_height{min-height:100%;position:fixed;left:0;top:0;background-color:#f4f4f4; width:100%;}
+.body_height_fff{min-height:100%;position:fixed;left:0;top:0;background-color:#fff; width:100%;}
+
+.bgf4f4f4{background-color:#f4f4f4; height:100%;}
+.eff3f9{background-color:#eff3f9;}
+
+#content{ height: 100%; }
+.content_bgfff{background-color:#fff;}
+
+.pb75{padding-bottom:75px;}
+.color_4c8efe{color:#4c8efe;}
+.color_f9f9f9{background-color:#f9f9f9;}
+
+
+
+/*###################메인###################*/
+
+.Lnb_list {padding-bottom:10px;  width:100%; }
+.Lnb_list ul {
+    padding-left:10%; line-height:50px;
+    text-overflow:clip;
+    overflow:hidden;
+}
+.Lnb_list ul a{
+    float:left; font-size:1.0em; margin-right:20px; color:#fff; position:relative;
+}
+.Lnb_list ul a:last-child{margin:0;}
+
+.Lnb_list ul a li:hover {color:#ffb628;}
+.Lnb_list ul a:hover li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 7px;
+    height: 7px;
+    margin-left: -2px;
+    border: 0;
+    border-radius: 1000px;
+    background-color: #ffb628;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    margin-left:-3px;
+}
+
+.content_tab{background:#013e97; display:flex; }
+.content_tab ul{width:100%; margin:0 0%;  padding:20px 0 5px; text-align:center;}
+.content_tab ul li{float:left;}
+.content_tab ul a{color:#fff;}
+
+.content_tab ul a:nth-of-type(1) li span{
+    background:url(../images/icon_plan_off.png) no-repeat; 
+    width:34px; height: 34px;
+    display: inline-block; background-size:50%;
+    vertical-align: -webkit-baseline-middle; 
+    margin:3px -10px 0 0;
+}
+.content_tab ul a:nth-of-type(2) li span{
+    background:url(../images/icon_connection_search_off.png) no-repeat;
+    width:34px; height: 34px;
+    display: inline-block; background-size:50%;
+    vertical-align: -webkit-baseline-middle;
+    margin:3px -10px 0 0;
+}
+.content_tab ul a:nth-of-type(3) li span{
+    background:url(../images/icon_whereMap_off.png) no-repeat;
+    width:34px; height: 34px;
+    display: inline-block; background-size:50%;
+    vertical-align: -webkit-baseline-middle;
+    margin:-3px -10px 0 0;
+}
+.content_tab ul a li p{margin-top:-5px;}
+.lnb_cir_listMenu ul li{float:left;}
+
+#content .main_visual{
+    margin-top:0.750em;
+    position:relative;
+}
+
+.content_tab ul a li{width:33.33%;}
+
+/*~ iphone5*/
+@media only screen and (min-width :320px) {
+    #content .main_visual ul li img{
+        width:100%;
+        margin:0 auto;
+    }
+    .lnb_cir_listMenu ul {width:60px; display: flex; margin:0 auto; margin-top:-35px;}
+}
+/*안드로이드 6~*/
+@media only screen and (min-device-width:321px) and (max-width : 360px) {
+    #content .main_visual ul li img{
+        width:100%;
+        margin:0 auto;
+    }
+    .lnb_cir_listMenu ul {width:60px; display: flex; margin:0 auto; margin-top:-35px;}
+}
+/*ios 6~*/
+@media only screen and (min-device-width:361px) and (max-device-width : 480px) {
+   #content .main_visual ul li img{
+        width:100%;
+        margin:0 auto;
+    }
+    .lnb_cir_listMenu ul {width:60px; display: flex; margin:0 auto; margin-top:-35px;}
+}
+/*mini~*/
+@media only screen and (min-device-width:768px){
+   #content .main_visual ul li img{
+       width:1920px;
+        margin:0 auto;
+    }
+    .lnb_cir_listMenu ul {width:60px; display: flex; margin:0 auto; margin-top:-35px;}
+}
+/*tab ~*/
+@media all and (min-width:1024px){
+    #content .main_visual ul li img{
+        width:1920px;
+        margin:0 auto;
+    }
+    #content .main_visual{
+    margin-top:2.5%;
+    position:relative;
+}
+    .lnb_cir_listMenu ul {width:60px; display: flex; margin:0 auto; margin-top:-35px;}
+}
+
+#content .visual_btn_pre{
+    position:absolute; top:50%;
+    display: inline-block;
+    width:100%;
+}
+#content .visual_btn_pre .AreaMainVisualImg01{
+    float:left; margin-left:20px;
+}
+#content .visual_btn_pre .AreaMainVisualImg02{
+    float:right; margin-right:20px;
+}
+/*~ mobile*/
+@media only screen and (min-width :320px)and (max-device-width : 480px) {
+
+#content .visual_btn_pre .AreaMainVisualImg01, #content .visual_btn_pre .AreaMainVisualImg02{
+    width:14px;
+}
+}
+.cubeBtn p:first-child{float:left; margin-left:20px}
+.cubeBtn p:last-child{float:right; margin-right:-15px;}
+.cubeBtn img{width:70%;}
+
+ 
+ .area_proView .prebtn{
+    background:url(../images/btn_mainPre.png) no-repeat; width:22px; height:36px;
+    background-size:50%;
+    display: inline-block;
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+
+.area_title_txt{
+    padding-top:20px; display:inline-block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight:600; font-size:1.1em;
+    color:#222842; vertical-align:middle;
+}
+.area_proView .areaImgList_con ul li{
+  color:#fff; position: relative; text-align: center;
+}
+.area_proView .areaImgList_con ul li span{
+  color:#fff; position: absolute; top:45%; display: inline-block; left:0; margin:0 auto; width:100%;
+}
+
+.popLayerCon{
+    width: 100%; 
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-bottom: 1px;
+    position:fixed; 
+	bottom: -873px;
+    height: 1050px;
+    
+}
+/* FOOTER 떨어진간격
+.popLayerCon{
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-bottom: 1px;
+    position:fixed; top:-webkit-calc(100% - 90px);
+    min-height:100%;
+    
+}
+*/
+  .area_proView{
+    border-radius:15px;
+    -webkit-border-radius:15px; 
+    -o-border-radius:15px; -ms-border-radius:15px; -moz-border-radius:15px;
+    background:#fff;
+    width:90%;
+    margin-left:5%;
+    text-align:center;
+    box-shadow:0px -2px 5px 2px rgba(0,0,0,0.3);
+    overflow:hidden;
+          -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -webkit-user-select:none;
+           -webkit-touch-callout:none;
+           overflow-y: 160px !important;
+    -webkit-user-select:none;
+}
+
+/*mini~*/
+@media only screen and (min-device-width:641px) and (min-device-width:768px){
+    .area_proView .areaImgList_con ul li img{background-size:100% 100%!important; width:1920px;}
+    .popLayerCon{
+    width: 100%; 
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-bottom: 1px;
+    position:fixed; 
+	bottom: -873px;
+    height: 1100px;
+    
+}
+ 
+}
+/*tab ~*/
+@media only screen and (min-device-width:769px) and (min-width:1024px){
+    .area_proView .areaImgList_con ul li{background-size:100% 100%!important; width:1920px;}
+    .test022{
+    width: 100%; */
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-bottom: 1px;
+    position:fixed; top:50%;
+    min-height:100%;
+    
+}  
+    .popLayerCon{
+    width: 100%; 
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    padding-bottom: 1px;
+    position:fixed; 
+	bottom: -873px;
+    height: 1100px;
+    
+}
+}
+
+
+.area_proView .areaImgList_con ul li:nth-of-type(1), .area_proView .areaImgList_con ul li:nth-of-type(2), .area_proView .areaImgList_con ul li:nth-of-type(3), .area_proView .areaImgList_con ul li:nth-of-type(4), .area_proView .areaImgList_con ul li:nth-of-type(5), .area_proView .areaImgList_con ul li:nth-of-type(6), .area_proView .areaImgList_con ul li:nth-of-type(7), .area_proView .areaImgList_con ul li:nth-of-type(8){
+   /* background:url(../images/MareaImg01.png) no-repeat; background-size:100% 100%; height:125px;*/
+    width:100%;
+}
+
+/*.area_proView .areaImgList_con ul li:nth-of-type(2){
+     background:url(../images/MareaImg02.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(3){
+    background:url(../images/MareaImg03.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(4){
+     background:url(../images/MareaImg04.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(5){
+    background:url(../images/MareaImg05.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(6){
+     background:url(../images/MareaImg06.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(7){
+    background:url(../images/MareaImg07.png) no-repeat; background-size:100% 100%; height:125px;
+}
+.area_proView .areaImgList_con ul li:nth-of-type(8){
+     background:url(../images/MareaImg08.png) no-repeat;  background-size:100% 100%; height:125px;
+}
+*/
+
+.cuveCust_txt{
+    color:#fff;
+    font-size:1.3em;
+    text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    line-height:1.4em;
+}
+
+/*cuve고객센터*/
+/*~ iphone5*/
+@media only screen and (min-width :320px) {
+    .cuveCustomer{
+    background: radial-gradient(#8fcb03, #77a900); 
+    background: -moz-radial-gradient(#8fcb03, #77a900); 
+	background: -webkit-radial-gradient(#8fcb03, #77a900); 
+	background: -o-radial-gradient(#8fcb03, #77a900); 
+	background: -ms-radial-gradient(#8fcb03, #77a900); 
+    padding:40px 1.3em; 50px ;
+    margin:-10px auto 0;
+    width:100%;
+    }
+    .cuveImg_cha{
+    background:url(../images/main_cube_customer.png) no-repeat; 
+    width:65px; height:138px;
+    background-size:80%;
+    float:left; margin-right:5px;
+}
+
+.cuveCust_txt02{
+    color:#fff; text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    margin-top:10px; line-height:1.35em;
+}
+}
+/*안드로이드 6~*/
+@media only screen and (min-device-width:321px) and (max-width : 360px) {
+    .cuveCustomer{
+    background: radial-gradient(#8fcb03, #77a900); 
+    background: -moz-radial-gradient(#8fcb03, #77a900); 
+	background: -webkit-radial-gradient(#8fcb03, #77a900); 
+	background: -o-radial-gradient(#8fcb03, #77a900); 
+	background: -ms-radial-gradient(#8fcb03, #77a900); 
+    padding:40px 1.688em; 50px ;
+    margin:-10px auto 0;
+    width:100%;
+    }
+    .cuveImg_cha{
+    background:url(../images/main_cube_customer.png) no-repeat; 
+    width:65px; height:138px;
+    background-size:80%;
+    float:left; margin-right:5px;
+}
+ .message_block{display:block;}
+.cuveCust_txt02{
+    color:#fff; text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    margin-top:10px; line-height:1.35em;
+}
+}
+/*ios 6~*/
+@media only screen and (min-device-width:361px) and (max-device-width : 480px) {
+  .cuveCustomer{
+    background: radial-gradient(#8fcb03, #77a900); 
+    background: -moz-radial-gradient(#8fcb03, #77a900); 
+	background: -webkit-radial-gradient(#8fcb03, #77a900); 
+	background: -o-radial-gradient(#8fcb03, #77a900); 
+	background: -ms-radial-gradient(#8fcb03, #77a900); 
+    padding:40px 1.688em; 50px ;
+   margin:-10px auto 0;
+    width:100%; 
+ 
+}
+    .cuveImg_cha{
+    background:url(../images/main_cube_customer.png) no-repeat; 
+    width:94px; height:138px;
+    background-size:80%;
+    float:left; margin-right:5px;
+}
+     .message_block{display:block;}
+.cuveCust_txt02{
+    color:#fff; text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    margin-top:10px; line-height:1.35em;
+}
+}
+/*mini~*/
+@media only screen and (min-device-width:768px){
+   .cuveCustomer{
+    background: radial-gradient(#8fcb03, #77a900); 
+    background: -moz-radial-gradient(#8fcb03, #77a900); 
+	background: -webkit-radial-gradient(#8fcb03, #77a900); 
+	background: -o-radial-gradient(#8fcb03, #77a900); 
+	background: -ms-radial-gradient(#8fcb03, #77a900); 
+    padding:40px 1.688em; 50px ;
+    margin:-10px auto 0;
+    width:100%;
+ 
+}
+    .cuveImg_cha{
+    background:url(../images/main_cube_customer.png) no-repeat; 
+    width:94px; height:138px;
+    background-size:80%;
+    float:left; margin-right:1.313em;
+}
+     .message_block{display:block;}
+.cuveCust_txt02{
+    color:#fff; text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    margin-top:10px; line-height:1.3em;
+}
+}
+/*tab ~*/
+@media all and (min-width:1024px){
+   .cuveCustomer{
+    background: radial-gradient(#8fcb03, #77a900); 
+    background: -moz-radial-gradient(#8fcb03, #77a900); 
+	background: -webkit-radial-gradient(#8fcb03, #77a900); 
+	background: -o-radial-gradient(#8fcb03, #77a900); 
+	background: -ms-radial-gradient(#8fcb03, #77a900); 
+   padding:40px 1.688em; 50px ;
+    margin:-10px auto 0;
+    width:100%;
+ 
+}
+    .cuveImg_cha{
+    background:url(../images/main_cube_customer.png) no-repeat; 
+    width:94px; height:138px;
+    background-size:80%;
+    float:left; margin-right:1.313em;
+}                                                                                      
+     .message_block{display:block;}
+.cuveCust_txt02{
+    color:#fff; text-shadow: 2px 2px 0px rgba(0,0,0, 0.1);
+    margin-top:10px; line-height:1.3em;
+}
+}
+
+
+/*========================지역메인=========================*/
+
+
+.icicon_p36{}
+.icicon_p12{ 
+   }
+
+.AreaMainContent h3{ 
+    color:#222842; font-size:1.125em; border-bottom:1px solid #cfd0d4;
+    line-height:3.344em; padding-left:1.125em;
+}
+.AreaMainContent h3 div{ 
+    padding-left:0.500em;
+    display:inline-block;
+    vertical-align:middle;
+}
+
+.MainVisual_bottom{
+    height:12px;  border-top:1px solid #d4d4d4;
+    background:#efefef;
+}
+
+/*동반자별여행*/
+.partner_travel_con{letter-spacing:-0.5px;}
+.partner_travel_con h3{
+    color:#222842; font-size:1.125em; border-bottom:1px solid #cfd0d4;
+    line-height:3.344em;
+}
+.partner_travel_con .partnerList a{color:#343f6c}
+.partner_travel_con .partnerList li{width:20%; text-align:center; float:left; padding:1.063em }
+.partner_travel_con .partnerList li a:hover{color:#008efd; font-weight:500;}
+
+.familyList_con{background:#f9f9f9; padding:0.625em 1.094em 0; width:100%; margin:0 auto;}
+.familyList_con .TConList01 .Tphoto{position:relative;}
+.familyList_con .TConList02 .Tphoto{position:relative; margin-top:0.594em;}
+
+.familyList_con .TConList01 .Tphoto img{margin:0 auto; display:inline-block; width:100%; }
+.familyList_con .TConList02 .Tphoto img{width:100%; }
+.familyList_con  .eventProduct_txt .iconWid, .familyList_con  .eventProduct_txt .iconWid02{
+    float:right; padding-top:2px; 
+}
+.familyList_con .eventProduct_txt .iconWid img{
+    width:35px; vertical-align: middle;
+}
+.familyList_con .eventProduct_txt .iconWid02 img{
+    width:35px; vertical-align: -webkit-baseline-middle;
+}
+
+.familyList_con .TConList01 .Tphoto .eventProduct_txt, 
+.familyList_con .TConList02 .Tphoto .eventProduct_txt{
+    position:absolute; bottom:5px; font-size:0.813em;
+    background:#000; width:100%;
+    vertical-align:middle; line-height:2.344em; padding:0 10px;
+     background-color: rgba( 0, 0, 0, 0.5 ); color:#222842; 
+}
+.familyList_con .TConList01 .Tphoto .eventProduct_txt .numberImg01{
+    background:url(../images/area_partnerTravelImg01_number01.png) no-repeat 0 0.5em;
+    width:86px; height:37px; float:left; background-size:70%;
+}
+.familyList_con .TConList02 .Tphoto .eventProduct_txt .numberImg02{
+    background:url(../images/area_partnerTravelImg01_number02.png) no-repeat 0 0.5em;
+    width:86px; height:46px; float:left; background-size:70%;
+}
+.familyList_con .TConList02 .Tphoto .eventProduct_txt .numberVR{
+    background:#ffad28; color:#fff; border-radius:1000px; padding:0.2em 0.5em;
+    margin-left:0.938em;
+}
+.familyList_con .titleInfo_txt{
+    border:1px solid #94abc3; padding:1.219em 0.938em 1.094em;
+    background:#fff;  color:#222842; margin-top:-5px;
+}
+.familyList_con .titleInfo_txt .areaSuper{
+   background:#008efd; font-size:0.875em; color:#fff; padding:0.375em; font-weight:500;
+    margin-right:5px;
+}
+.familyList_con .TConList02 .titleInfo_txt{border:1px solid #999999; padding:0;}
+.familyList_con .titleInfo_txt h4{
+    font-size:0.938em;  color:#222842;
+    -moz-box-flex: 1;      
+    -webkit-box-flex: 1;    
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; 
+    overflow:hidden;
+    text-overflow:ellipsis;  word-wrap: break-word; white-space:normal;
+    line-height:1.7em;
+   
+} 
+.familyList_con .TConList02 .titleInfo_txt h4{
+    font-size:0.938em; color:#222842; 
+    -moz-box-flex: 1;      
+    -webkit-box-flex: 1;    
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; 
+    overflow:hidden;
+    text-overflow:ellipsis;  word-wrap: break-word; white-space:normal;
+    line-height:1.7em;
+    margin:1.219em 0 1.094em;
+} 
+
+.familyList_con .titleInfo_txt .price_txt{padding-top:1.094em; font-weight:600;}
+.familyList_con .titleInfo_txt .price_txt p:first-child{float:left;}
+.familyList_con .titleInfo_txt .price_txt p:last-child{float:right;}
+
+.familyList_con .TConList01 .weekTxt{color:#333; font-size:0.875em; padding-top:1.625em;}
+.familyList_con .TConList02 .presentTxt{
+    color:#fff; font-size:0.875em; padding:0.938em 0.625em 1.094em;
+     margin-top:0.938em;
+    outline:1px solid #fc7775;
+    background: -moz-linear-gradient(left top, #ffb02f 0%, #fa5e94 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffb02f), color-stop(100%,#fa5e94)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left top, #ffb02f 0%,#fa5e94 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left top, #ffb02f 0%,#fa5e94 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left top, #ffb02f 0%,#fa5e94 100%); /* IE10+ */
+	background: linear-gradient(left top, #ffb02fi 0%,#fa5e94 100%); /* W3C */
+}
+.titleInfoTxt_padding{padding: 0em 0.938em 0em!important;}
+
+/*mini~*/
+@media only screen and (min-device-width:1920px){
+    .familyList_con{background:#f9f9f9; padding:0.625em 1.094em;}
+    .familyList_con .Tphoto img{width:1920px; margin:0 auto;}
+}
+/*tab ~*/
+@media all and (min-width:2580px){
+    .familyList_con{background:#f9f9f9; padding:0.938em 1.094em;}
+     .familyList_con .Tphoto img{width:2580px; margin:0 auto;}
+}
+.familyList_con .btnAddPlusCon{  
+    color:#222842; font-size:1.0em; text-align:center; font-weight:500;
+    padding:1.0em 0 1.313em; text-align:center;
+}
+.familyList_con .btnAddPlusCon .btnAddPlus{
+   display: inline-block; text-align:center;
+}
+
+/****많이찾는키워드****/
+.keywordCon h3{
+    color:#222842; font-size:1.125em; border-bottom:1px solid #cfd0d4;
+    line-height:3.344em;
+}
+.keywordCon .keywordListBg{
+    background:#f9f9f9; 
+    padding:1.125em 0 0.70em;  
+}
+.keywordCon .keywordListBg .keywordList{
+    padding:0 0 0 0.563em; 
+      white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    word-wrap:  break-word;
+    margin: 0 auto; 
+}
+/**mobile_640까지*/
+@media only screen and (min-device-width:320px) and (max-device-width:640px){
+    .keywordCon .keywordList ul li:nth-of-type(3), .keywordCon .keywordList ul li:nth-of-type(6){
+   float:inherit; /*display:-webkit-box;*/ display:table;
+}
+    .keywordCon .keywordListBg .keywordList{
+    padding:0 0 0 0.563em; 
+      white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    word-wrap:  break-word;
+    margin: 0 auto; 
+    width:2580px;
+}
+}
+.keywordCon .keywordList ul li{
+    float:left; padding:0.781em 1.094em; font-size:0.875em;
+    border-radius:1000px;  margin:0 0.375em 0.563em 0;
+}
+.keywordCon .keywordList ul .bgfff{
+    background:#fff; border:1px solid #dadada; color:#222842;
+}
+.keywordCon .keywordList ul .bg008efd{
+    background:#008efd; border:1px solid #008efd; color:#fff;
+}
+.keywordCon .keywordList ul .bg003e97{
+    background:#003e97; border:1px solid #003e97; color:#fff; 
+} 
+/*=이벤트/할인상품=*/
+.areaEventDis_Con{background:#f9f9f9;}
+.areaEventDis_h3{
+     background: -moz-linear-gradient(left top, #008ffe 0%, #0070c7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#008ffe), color-stop(100%,#0070c7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* Opera11.10+ */
+	background: -ms-linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* IE10+ */
+	background: linear-gradient(left top, #008ffe 0%,#0070c7 100%); /* W3C */
+    color:#fff; font-weight:600; font-size:1.5em; padding:1.875em 0.563em;
+}
+.areaEventDis_h3 .titletxt{
+    font-size:0.70em; font-weight:400; padding-top:0.938em; letter-spacing:-0.5px;
+}
+.areaEventbanner{ 
+    background:url(../images/bg_eventDiscount.png)no-repeat right 10px; 
+    background-size:170px; height:240px; 
+}
+
+.areaEventTravelList{
+    margin: -150px 0.563em 0; padding:0 0.906em;
+    background:#fff; border:1px solid #c2d1df;
+}
+.areaEventTravelList .travelList01{
+    width: 100%; height: auto; color:#343f6c;
+}
+.areaEventTravelList .connection_txt{margin-bottom:1.094em; color:#fff; padding-top:1.094em;}
+.areaEventTravelList .connection_txt p{
+    background:#008efd; padding:0.375em; display:inline-block; margin-right:10px;
+    font-size:0.80em;
+}
+.areaEventTravelList .travelList01 .txt{float:left; width:65%; margin-right:5%;}
+.areaEventTravelList .travelList01 .txt .benefit{
+    color:#008efd; font-size:1.3em; font-weight:600; padding:0.781em 0 0.781em;
+}
+.areaEventTravelList .travelList01 .img{width:30%; float:right; margin-top:1.094em;}
+.areaEventTravelList .travelList01 .date{
+   border-top:1px solid #c2d1df; clear:both; margin:0 -0.906em 0;
+    padding:0.813em 0.938em 0.40em; font-weight:600; font-size:1.1em;
+} 
+.allViewCon{float:right; padding:1.125em 0.938em 1.313em 0;}
+.areaEventDis_Con .allView{ 
+    color:#4d5267;float:left;
+    font-weight:500; font-size:1.0em; margin-right:0.35em;
+}
+/*=여행후기=*/
+.areaTravelReview_Con .travel_reviewSns{
+    padding:0 0.563em 0;
+    background:#f9f9f9;
+
+}
+.review_title_conTxt{padding:1.125em 1.125em 1.125em 0.375em;}
+
+.areaTravelReview_Con .review_title{color:#333; padding:0 0.375em 0.813em 0;}
+.areaTravelReview_Con .review_conTxt{
+    color:#333; font-size:0.875em; font-weight:400;
+     -moz-box-flex: 1;      
+    -webkit-box-flex: 1;    
+    display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; 
+    overflow:hidden;
+    text-overflow:ellipsis;  word-wrap: break-word; white-space:normal;
+    line-height:1.5em;
+}
+.areaTravelReview_Con .review_photoListCon{position:relative;}
+.areaTravelReview_Con .review_photoList{
+   float:left; position:relative; margin-right:0.875em;
+
+}
+/*.areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    /*max-height:111px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px; max-height:222px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+/*
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:111px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:222px; display: inline-block;
+}
+*/
+
+.swiper_photoList_over{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    clear:both;
+    padding-top:0.5em;
+    padding-bottom:1.3em;
+}
+.swiper_photoList_over .swiper_over{
+    display:inline-block; *display:inline;zoom:1; width:8px; height:8px;
+    margin-right:9px; border-radius:1000px; background:#e2f2ff;
+}
+.swiper_photoList_over .swiper_over_active{background:#ffb628;}
+
+/*==동남아시아==*/
+.areaCountry_Con .productListCon{
+    background: #f9f9f9; padding-bottom:1.313em;
+}
+.areaCountry_Con .productListCon ul{padding:1.125em 0.563em 0;  
+}
+.areaCountry_Con .productListCon ul li{
+    border-radius:1000px;
+    border:1px solid #e3e3e3;
+    padding:0.938em;
+    width:49%; float:left;
+    color:#222842;
+    margin:0 0.375em 0.563em 0;
+    font-size:0.938em;
+    letter-spacing:-0.5px;
+    background:#fff;
+    position:relative;
+}
+.areaCountry_Con .productListCon ul a li:hover{
+    border-radius:1000px;
+    border:1px solid #008efd;
+    padding:0.938em;
+    width:49%; float:left;
+    color:#008efd;
+}
+.BtnTop_con{background:#efefef; border-top:1px solid #d4d4d4; height:4.594em;}
+.BtnTop_con img{
+    width:49.5px; line-height:4.594em; vertical-align: middle; float:right;
+    margin-right:0.781em; padding-top: 0.750em;
+}
+
+/*=====================ㅑ===========맞춤검색==================================*/
+
+
+
+.tab_search_con ul li{width:20%; float:left; text-align:center;}
+.tab_search_con ul li span{
+    border-top:2px dashed #d9d9d9;  width:15px; margin-top:13px;
+    float:right;
+}
+.tab_search_con ul li:nth-of-type(1){
+  
+}
+.tab_search_con ul li:hover{ 
+  color:#008efd; font-weight:500;
+}
+
+
+
+
+/*==================푸터======================================*/
+
+footer{color:#b3b5bb; letter-spacing:-1px;}
+
+.footer_list{line-height:45px;}
+.footer_list li{width:20%; float:left; text-align: center; color:#4e5368; font-size:0.90em;}
+.footer_list li span{float:right; color:#c9cbd1;}
+.footer_list li a{color:#4e5368;}
+
+.footerAddress{background:#404656; clear:both; padding-bottom: 80px; }
+.footerAddress .address_con{max-width:400px; margin:0 auto;}
+.footerAddress .address_con .Finfo li{line-height:1.6em; font-size:0.875em;}
+.footerAddress .address_con .Finfo li:nth-of-type(1){font-size:0.90em;}
+.footerAddress .address_con .Finfo a{color:#abaeb5; }
+.footerAddress .companyName{color:#fff; font-size:1.0em;}
+.footerAddress .address_con{padding:1.125em 0.985em 5.626em;}
+
+.footerAddress .email_refusal{text-decoration:underline; }
+.footerAddress .copy{font-size:0.75em; letter-spacing:-0.5px; clear:both; padding-top:0.625em; text-align:center;}
+
+.footerAddress .btn_appstore{
+    padding:1.313em 0 1.688em; margin:0 auto; width:100%; text-align:center;
+}
+.footerAddress .btn_appstore img{width:120px;}
+.footerAddress .btn_appstore .apps_con {display:inline-block; }
+
+.footerAddress .Fclause_con{margin:0 auto; display: table;}
+.footerAddress .Fclause_con li{float:left; font-size:0.80em; text-align:center; }
+.footerAddress .Fclause_con li span{margin:0 5px;}
+
+
+
+
+
+
+
+/*=====================기기별미디어쿼리=====================================
+<!--주요 가로 해상도: 320 / 480 / 640 / 720 / 1080 / 1280 / 1440 / 1920 -->*/
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .areaTravelReview_Con .review_photoList img, .areaTravelReview_Con .review_photoList02 img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:95px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:190px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-395px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:95px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:190px; display: inline-block;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:109px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:218px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+     max-height:109px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:218px; display: inline-block;
+}
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) and (max-width: 413px) {
+  .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:111px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:222px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:111px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:222px; display: inline-block;
+}
+}
+
+
+
+
+
+
+@media screen and (min-width: 414px) and (max-width: 425px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:117px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/  max-height:234px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:117px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:234px; display: inline-block;
+}
+}
+
+
+
+
+
+@media screen and (min-width: 426px) and (max-width: 480px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:111px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:222px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:111px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:222px; display: inline-block;
+}
+}
+
+
+
+@media screen and (min-width: 481px) and (max-width: 639px) {
+  .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:139px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:278px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:139px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:278px; display: inline-block;
+}
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width: 666px) {
+.areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+   max-height:200px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:400px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-810px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:200px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:400px; display: inline-block;
+}
+}
+
+
+
+@media screen and (min-width: 667px) and (max-width: 735px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:200px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:400px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-790px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:200px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:400px; display: inline-block;
+}
+}
+
+
+
+@media screen and (min-width: 736px) and (max-width: 767px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:300px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:600px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-860px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:300px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:600px; display: inline-block;
+}
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:300px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:600px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-830px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:300px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:600px; display: inline-block;
+}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2580px) {
+ .areaTravelReview_Con .review_photoList img{
+   /*max-width:120px;*/ vertical-align:top; /*width:120px;*/
+    max-height:800px;
+}
+.areaTravelReview_Con .review_photoList .img01{
+    float:left; /*max-width:66.55%;  max-width:240px;*/ max-height:700px;
+}
+/*.areaTravelReview_Con .img04{
+    position:absolute; width:60.00%;
+}*/
+
+.areaTravelReview_Con .review_photoList02{
+    position:absolute; right:-450px; top:0; 
+    margin-right: 0.875em;
+}
+.areaTravelReview_Con .review_photoList02 img{
+    max-height:111px; vertical-align:top; 
+}
+.areaTravelReview_Con .review_photoList02 .img04{
+    float:left; max-height:222px; display: inline-block;
+}
+}

@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no">
+<link href="../css/common.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<title>참좋은여행</title>
+</head>
+    <!--script>
+$(window).scroll(function() { 
+    if ($(window).scrollTop() == $(document).height() - $(window).height()) { $('.search_resultCon').css('position','absolute'); } });
+
+    </script-->
+    
+<body>
+    <section id="wrap">
+        <!--상단-->
+        <header id="header" class="page_header">
+            <div class="top_color_test ">
+            <div class="head_gnb">
+                <a href="" class="btn_head_sidemenu fl"><span class="ic_GnbMain ic_side_menu">사이드메뉴</span></a>
+                <h2 class="fl"><img src="../images/logo.png"></h2>
+                <a href="" class="btn_head_sidemenu_close02"><span class="ic_GnbMain ic_side_search">사이드메뉴</span></a>
+                <a href="" class="btn_head_sidemenu_close"><span class="ic_GnbMain ic_side_menu02">사이드메뉴</span></a>
+            </div>
+            <div class="Lnb_list">
+                <ul>
+                    <a href="#"><li>홈</li></a>
+                    <a href="#"><li>해외여행</li></a>
+                    <a href="#"><li>자유여행</li></a>
+                    <a href="#"><li>수퍼클래스</li></a>
+                    <a href="#" class="dis_none"><li>부산여행</li></a>
+                </ul>    
+            </div>
+            </div>  
+        </header>
+        <!--//상단-->
+        <div class="clear"></div>
+        <!--content-->
+        <section id="content">
+            <div class="content_tab">
+                <ul>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab01_off">사이드메뉴</span><span>기획전</span>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab02_on">사이드메뉴</span><span class="tabActive">맞춤검색</span>
+                            <div class="lnb_cir_listMenu">
+                                <ul>
+                                    <li class="cir_disable"></li>
+                                    <li class="cir_disable"></li>   
+                                    <li class="cir_disable"></li>
+                                    <li class="cir_disable"></li>
+                                    <li class="cirOver_active"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <span class="ic ic_side_naviTab03_on">사이드메뉴</span><span>어디갈까?</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="searchContent">
+                <!--Tab-->
+                <div class="naviTab_titleTxt">
+                    <div class="tabLine_hidden"></div>
+                    <ul>
+                        <li>
+                            <div class="tabLineBox">
+                                <span class="ic ic_side_searchNaviTabTitle01"></span>
+                                <span class="naviTabTxt">동반자</span>
+                            </div>
+                        </li>
+                        <li><div class="tabLineBox">지역</div></li>
+                        <li><div class="tabLineBox">스타일</div></li>
+                        <li><div class="tabLineBox">일정</div></li>
+                        <li><div class="tabLineBox">예산</div></li>
+                    </ul>
+                </div>
+                <!--//Tab-->
+                <div class="clear"></div>
+                <div class="search_checkBoxCon">
+                    <div class="titleTxt">
+                        <strong>동반자</strong>
+                        <p class="pt035">누구와 함께 여행하시나요?</p>
+                        <p class="searchBgImg"></p>
+                    </div>
+                    <ul class="checkCircleList">
+                        <li><span class="ic ic_searchCheckIcon"></span></li>
+                        <li>친구</li>
+                        <li>커플</li>
+                        <li class="checkActive">혼자</li>
+                        <li>모임</li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+                
+            </div> 
+            <div class="search_resultCon">
+
+                <div class="btn_Listcontent">가족<span class="ic ic_searchCloseIcon"></span></div>
+                <div class="btn_resultView">결과보기 (<strong>1,232</strong>)<span class="ic ic_searchNextIcon"></span></div>
+                <div class="noneDiv"></div>
+                <div class="clear"></div>
+            </div>
+        </section>
+        <!--//content-->
+        <div class="clear"></div>
+        <!--div class="popLayerCon">
+            <div class="cubeBtn">
+                <p><a hre="#"><img src="../images/icon_cube.png"></a></p>
+                <p><a id="" hre="#"><img src="../images/icon_btn_top.png"></a></p>
+            </div>
+            <div class="clear"></div>
+            <!--지역별상품보기>
+            
+            <div class="area_proView">
+                <div class="area_title_txt">
+                    <p class="inine-block fl">지역별상품보기</p><span class="prebtn"></span>
+                </div>
+                <div class="clear"></div>
+                <div class="areaImgList_con">
+                    <ul>
+                        <li><img src="../images/MareaImg01.png"><span>#동남아</span></li>
+                        <li><img src="../images/MareaImg02.png" ><span>#유럽/인도</span></li>
+                        <li><img src="../images/MareaImg03.png" ><span>#홍콩/대만</span></li>
+                        <li><img src="../images/MareaImg04.png" ><span>#일본</span></li>
+                        <li><img src="../images/MareaImg05.png" ><span>#중국</span></li>
+                        <li><img src="../images/MareaImg06.png" ><span>#미주</span></li>
+                        <li><img src="../images/MareaImg07.png" ><span>#대양주</span></li>
+                        <li><img src="../images/MareaImg08.png" ><span>#괌/사이판</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--//지역별 상품보기>
+        </div-->
+    </section>
+</body>
+</html>
